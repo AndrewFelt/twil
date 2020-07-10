@@ -3,7 +3,7 @@
 
 [Twilio](https://www.twilio.com/) is a cloud service that allows for programatic sending and receiving calls, texts, chat, etc
 
-[Prometheus](https://prometheus.io/) is an open source monitoring solution that allows for monitoring, instrument, and alerting infrastructure and applications
+[Prometheus](https://prometheus.io/) is an open source monitoring solution that allows for monitoring, instrumenting, and alerting on infrastructure and applications
 
 twil takes usage data from Twilio and allows it to be exported to Prometheus.
 
