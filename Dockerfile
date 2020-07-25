@@ -10,7 +10,6 @@ COPY go.mod .
 
 RUN go mod download
 
-COPY go.mod .
 COPY collector.go .
 COPY main.go .
 
@@ -30,5 +29,5 @@ COPY --from=build_base /tmp/twil/out/twil /app/twil
 # This container exposes port 8888 to the outside world
 EXPOSE 8888
 
-# Run the binary program produced by `go install`
+# Run the binary program produced by `go build`
 CMD ["/app/twil", "-port=:8888", "-account=<twil_account_key>", "-token=<twil_token>"]
